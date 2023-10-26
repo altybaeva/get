@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>besoft food</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+		}
+		.conteiner3{
+			width: auto;
+			height:auto;
+		}
+		.conteiner{
+			width: auto;
+			height: 735px;
+			background-color: black;
+			display: flex;
+			flex-direction: row;
+		}
+		.text1{
+			width: 80%;
+			transform: translateX(-50%);
+			margin-top: 350px;
+			margin-left: 50%;
+			text-align: center;
+			font-size: 60px;
+			color: white;
+			animation-name: t;
+			animation-duration: 5s;
+			position: absolute;
+		}
+		@keyframes t{
+			0%{
+				color: black;
+			}
+			20%{
+				color: white;
+			}
+		} 
+		.box{
+			position: absolute;
+			width: 20%;
+			height: 10%;
+			background-color: black;
+			animation-name: n;
+			animation-duration: 10s;	
+		}
+		@keyframes n{
+			0%{
+				top: 48%;
+				left: 53%;
+			}
+			25%{
+				top:48%;
+				left: 75%;
+			}
+			100%{
+				left: 75%;
+				top: 20%;
+			}
+		}
+		.text2{
+			width: 60%;
+			transform: translateX(-50%);
+			margin-left: 50%;
+			margin-top: 500px;
+			color: white;
+			text-align: center;
+			font-size: 35px;
+			animation-name: name;
+			animation-duration: 30s;
+		}
+		@keyframes name{
+			0%{
+				color: black;
+			}
+			10%{
+				color: white;
+			}
+		}
+		.photo{
+			width: 225px;
+			height: 30%;
+			border-radius: 100%;
+			background-size: cover;
+			background-position: center;
+			background-image: url(https://img.freepik.com/premium-photo/pizza-on-white-background-isolated-above-view-delicious-homemade-pizza-top-view_105694-484.jpg);
+			transform: translateX(-50%);
+			position: absolute;
+			top: 620px;
+			left: 42%;
+			animation-name: p;
+			animation-duration: 100s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes p{
+			0%{
+				transform: rotate(0deg);
+			}
+			10%{
+				transform: rotate(360deg);
+			}
+		}
+		.conteiner2{
+			position: relative;
+			left: 13%;
+			width: 75%;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.c{
+			width: 400px;
+			height: 450px;
+			border-radius: 10px;
+			position: relative;
+			top: 100px;
+			overflow: hidden;
+		}
+		.photo1{
+			width: 400px;
+			height: 450px;
+			background-image: url(https://cdn.dodostatic.net/static/Img/Products/e3f5dfcb094b4c9b8200ca9f573cb2f1_584x584.jpeg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 10px;
+			position: absolute;
+			left: -220px;
+			transition: 1s;
+		}
+		.photo1:hover {
+			transform: translateX(150px);
+			border: 1px solid black;
+		}
+		.box1{
+			width: 80px;
+			height: 32px;
+			border-radius: 20px;
+			text-align: center;
+			font-size:25px;
+			color: white;
+			background-color: blue;
+			position:absolute;
+			left: 300px;
+			top: 30px;
+		}
+		.text3{
+			width: 150px;
+			margin-top: 50px;
+			margin-left: 210px;
+			color: black;
+			font-size: 23px;	
+		}
+		.text4{
+			width: 200px;
+			font-size: 16px;
+			margin-top: 50px;
+			margin-left: 210px;
+		}
+		.s{
+			width: 160px;
+			height: 50px;
+			color: blue;
+			font-size: 30px;
+			margin-left: 210px;
+			margin-top: 40px;
+		}
+		.k{
+			width: 180px;
+			height: 50px;
+			border-radius: 15px;
+			background-color: blue;
+			text-align: center;
+			color: white;
+			font-size: 25px;
+			margin-left: 180px;
+			margin-top: 70px;
+			position: absolute;
+			z-index: 100;
+		}
+		.photo2{
+			width: 400px;
+			background-image: url(https://pizzaplanet.by/uploads/products/360@2x.jpg?ver=1670878035)
+		}
+		.box2{
+			background-color: red;
+			font-size: 25px;
+		}
+		.photo3{
+			background-image: url(https://sun9-87.userapi.com/impg/zdJSbEh8obqySK-24ODYvN1cQkJxYcvnV3r4Ww/PlLPSwHqaA0.jpg?size=604x604&quality=96&sign=e2b40d3d35d08cf32e895e88bbe8d2f0&type=album);
+		}
+		.box3{
+			background-color: red;
+			font-size: 25px;
+		}
+		.photo4{
+			background-size: contain;
+			background-image: url(https://avatars.mds.yandex.net/get-sprav-products/5512660/2a0000017fd2d4b112ddf82674c32b6c68b4/XXL);
+		}
+		.photo5{
+			background-image: url(https://sun9-14.userapi.com/SCQEa7SVc3ZmGdexBIWki3JyJJ1vxfzrCVkXhA/3meTyggnLFI.jpg);
+		}
+		.photo6{
+			background-image: url(https://static.tildacdn.com/tild3737-6538-4138-a437-306231616537/82f80044-01c7-4091-a.jpg);
+		}
+		.photo7{
+			background-image: url(https://avatars.mds.yandex.net/get-sprav-products/9685839/2a0000018825aab83e39b8aaf104f4519993/XXL);
+		}
+		.text16{
+			font-size: 14px;
+		}
+		.photo8{
+			background-image: url(https://pp.userapi.com/c855432/v855432244/cf21/iVIsMaJ5Aek.jpg);
+			background-size: contain;
+		}
+		.photo9{
+			background-image: url(https://sun9-40.userapi.com/we20oX2eurD-ha_E1EcNrcuNP8zLY1yMVorieQ/aQa3jSrfGAQ.jpg);
+		}
+		.photo10{
+			background-size: contain;
+			background-image: url(https://cdn.dodostatic.net/static/Img/Products/e3dc4955fafc425fb6ddde70a0fcb3f3_1875x1875.jpeg);
+		}
+		.photo11{
+			background-image: url(https://sun9-57.userapi.com/d8j1Xsvt7XIJZGOEHufXaSJfhwHRfUk6FOwvfg/505Z4bnlbFU.jpg);
+		}
+		.photo12{
+			background-image: url(https://alazzamgroup.com/wp-content/uploads/2016/11/Milkshake-1024x768.jpg);
+		}
+		.box4{
+			background-color: red;
+			top: 20px;
+		}
+		.photo13{
+			background-image: url(https://www.kokos.ru/images/lots/9f/3dd/9f3ddcce0798475a39ba8248f3adf718.jpg);
+			width: 350px;
+			left: -180px;
+		}
+		.s2{
+			margin-top:110px;
+		}
+		.photo14{
+			background-image: url(https://sun9-56.userapi.com/nJjrFYyXBtppPcpyF8CknwbucwebVXvS8nCmJw/3z-N-3ij9Tg.jpg);
+		}
+		.photo15{
+			background-image: url(https://sun9-46.userapi.com/rEb49YwSAAgBHYA8MzblVMaabvpXufQEXVHaSA/-PlAo36VYCw.jpg);
+		}
+		.photo16{
+			background-image: url(https://avatars.mds.yandex.net/get-mpic/5163819/img_id7061347713586104177.png/9);
+			width: 350px;
+			left: -160px;
+		}
+		.photo17{
+			background-image: url(https://img2.uquiz.com/content/images/personalities/personality_images/654767_1660319620_ac6d85bf-7531-480f-a54a-b1b76a310ca0.jpg);
+			width: 300px;
+			left: -150px;
+		}
+		.photo18{
+			background-image: url(https://avatars.mds.yandex.net/i?id=9d3518f44ad860925ed4689637b806cbdb0514c7-7570837-images-thumbs&n=13);
+			background-size: contain;
+		}
+		.text34{
+			font-size: 15px;
+			text-align: center;
+			margin-top: 130px;
+			color: grey;
+		}
+		.text35{
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner3">
+		<div class="conteiner">
+			<div class="text1">Besoft Food</div>
+			<div class="box"></div>
+			<div class="text2">Доставка еды: роллы, суши, пицца</div>
+			<div class="photo"></div>
+		</div>
+		<div class="conteiner2">
+			<div class="c">
+				<div class="photo1">
+					<div class="box1">2В1</div>
+				</div>
+				<div class="text3">Пицца из половинок</div>
+				<div class="text4">Соберите свою пиццу 35см с двумя разными вкусами</div>
+				<div class="s"><b>от 520 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c1">
+				<div class="photo1 photo2">
+					<div class="box1 box2">NEW</div>
+				</div>
+				<div class="text3 text5">Азиатская</div>
+				<div class="text4 text6"> Томатный соус, моцарелла, шампиньоны, креветки, кужут, кисло-сладкий соус</div>
+				<div class="s"><b>от 395 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c2">
+				<div class="photo1 photo3">
+					<div class="box1 box3">NEW</div>
+				</div>
+				<div class="text3 text7">Фикси-пиицца с игрушкой из коллекции</div>
+				<div class="text4 text8">Цыпленок, картошечка, томаты, моцарелла, томатный соус</div>
+				<div class="s"><b>от 449 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c3">
+				<div class="photo1 photo4"></div>
+				<div class="text3 text9">Двойной цыпленок</div>
+				<div class="text4 text10">Цыпленок, моцарелла, фирменный соус, альфредо</div>
+				<div class="s">от 265 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c4">
+				<div class="photo1 photo5"></div>
+				<div class="text3 text11">Додстер</div>
+				<div class="text4 text12">Курочки, моцарелла, томат, сливочно-чесночного соус, пшеничной лепешке тортилия</div>
+				<div class="s ">от 149 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c5">
+				<div class="photo1 photo6"></div>
+				<div class="text3 text13">Грибной стартер</div>
+				<div class="text4 text14">Горячая закуска с шампиньонами, мацераллой с соусом ранч в тонкой пшеничной лепешке</div>
+				<div class="s">от 139 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c6">
+				<div class="photo1 photo7"></div>
+				<div class="text3 text15">Ланчбокс с куриными кусочками</div>
+				<div class="text4 text16">Горячий сытный обед из нежных куриных кусочков, пряного картофеля из печи сырного соуса</div>
+				<div class="s">от 279 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c7">
+				<div class="photo1 photo8"></div>
+				<div class="text3 text17">Картофель из печи</div>
+				<div class="text4 text18">Запеченная в печи картошечка-привычный вкус и мало масло пряные специи</div>
+				<div class="s">от 169 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c8">
+				<div class="photo1 photo9"></div>
+				<div class="text3 text19">Крылья барбекю</div>
+				<div class="text4 text20">Куриные крылышки со специями и ароматом копчения</div>
+				<div class="s">от 329 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c9">
+				<div class="photo1 photo10"></div>
+				<div class="text3 text21">Куриные кусочки 300гр</div>
+				<div class="text4 text22">Сочные кусочки цельного куриного филе с золотистой корочкой</div>
+				<div class="s">от 329 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c10">
+				<div class="photo1 photo11"></div>
+				<div class="text3 text23">Картофельные оладьи 8 шт</div>
+				<div class="text4 text24">Картофельные олади в  Готовится в печи</div>
+				<div class="s">от 179 сом</div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c11">
+				<div class="photo1 photo12">
+					<div class="box1 box4">NEW</div>
+				</div>
+				<div class="text3 text25">Шоколадный молочный коктейл</div>
+				<div class="text4 text26">Холодный шоколадный молочный коктейл в высоком стакане со льдом</div>
+				<div class="s"><b>от 159 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c12">
+				<div class="photo1 photo13"></div>
+				<div class="text3 text27">Coca-cola 1л</div>
+				<div class="s s2"><b>99 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c13">
+				<div class="photo1 photo14"></div>
+				<div class="text3  text28">Фанта</div>
+				<div class="s s2"><b>99 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c14">
+				<div class="photo1 photo15"></div>
+				<div class="text3  text29">Sprite</div>
+				<div class="s s2"><b>99 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c15">
+				<div class="photo1 photo16"></div>
+				<div class="text3  text30">Морс Вишня 0,45 л</div>
+				<div class="s s2"><b>110 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c16">
+				<div class="photo1 photo17"></div>
+				<div class="text3  tex31">Холодный чай Fuse tea Лимон</div>
+				<div class="s s2"><b>99 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>
+			<div class="c c17">
+				<div class="photo1 photo18">
+					<div class="box1 box3">NEW</div>
+				</div>
+				<div class="text3 text32">Какао с маршмеллоу</div>
+				<div class="text4 text33">Молоко, какао порошек, сахар, маршмеллоу</div>
+				<div class="s"><b>95 сом</b></div>
+				<button class="k" type="button" name="k" >Заказать</button>
+			</div>	
+		</div>
+		<div class="text34">Сайт разработан Besoft Teach</div>
+		<div class="text34 text35">OcOO "Besoft " 2019-2022</div>
+	</div>
+</body>
+</html>

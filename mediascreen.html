@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>media screen</title>
+	<style type="text/css">
+		.box{
+			width: 900px;
+			height: 700px;
+			border: 2px solid green;
+			display: flex;
+			flex-direction: row;
+		}
+		.a{
+			width: 250px;
+			height: 30px;
+			margin-top: 10px;
+		}
+		.q{
+			background-color: red;
+		}
+		.w{
+			background-color: blue;
+		}
+		@media screen and (min-width:300px) and (max-width:500px){
+			.q{
+				background-color: green;
+			}
+			.box{
+				flex-direction:column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="a q"></div>
+		<div class="a w"></div>
+	</div>
+</body>
+</html>

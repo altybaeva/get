@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300&family=Lobster&family=Rubik+Dirt&family=Rubik+Wet+Paint&family=Victor+Mono:ital@1&family=Yeseva+One&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>istore</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+		}
+		.conteiner{
+			width: auto;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+		}
+		.conteiner1{
+			width: 100%;
+			height: 20%;
+			background-color: #1D1F8B;
+		}
+		.photo{
+			width: 150px;
+			height: 150px;
+			border: 15px solid snow;
+			border-radius: 100%;
+			background-position: center;
+			background-size: cover;
+			background-image: url(https://thumbs.dreamstime.com/z/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D0%B0-%D0%B2-%D0%BF%D0%BB%D0%BE%D1%81%D0%BA%D0%BE%D0%BC-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5-%D0%BD%D0%B0-%D1%81%D0%B8%D0%BD%D0%B5%D0%BC-%D1%84%D0%BE%D0%BD%D0%B5-eps-174423871.jpg);
+			top: 5px;
+			position: relative;
+			animation-name: p;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			left: 43%;
+		}
+		@keyframes p{
+			0%{
+				transform: rotate(0deg);
+			}
+			30%{
+				transform: rotate(25deg);
+			}
+			
+			50%{
+				transform: rotate(-25deg);
+			}
+			70%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: translate(0px);	
+			}	
+			
+		}
+		.text{
+			text-align: center;
+			font-size:30px ;
+			color: white;
+		}
+		.text0{
+			font-family: 'Abril Fatface', cursive;
+		}
+		.text1{ 
+			text-align: center;
+			font-size: 30px;
+		}
+		.a{
+			width: 90%;
+			height: 30px;
+			position: relative;
+			transform: translate(-50%);
+			left: 50%;
+			top: 20px;
+		}
+		.conteiner2{
+			width: 80%;
+			height: auto;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			left: 10%;
+			top: 120px;
+		}
+		.apple{
+			width: 230px;
+			height: 230px;
+			background-size: cover;
+			background-position: center;
+			background-image: url(https://www.thesun.co.uk/wp-content/uploads/2023/02/apple-logo-newnew-op.jpg?strip=all&quality=100&w=1920&h=1080&crop=1);
+		}
+		.samsung{
+			background-image: url(https://e0.pxfuel.com/wallpapers/899/591/desktop-wallpaper-black-white-samsung-logo.jpg);
+		}
+		.huawei{
+			background-image: url(https://w0.peakpx.com/wallpaper/777/680/HD-wallpaper-huawei-android-huawei-logo-note-orange-phone-plus-thumbnail.jpg);
+		}
+		.xiaomi{
+			background-image: url(https://besthqwallpapers.com/Uploads/17-6-2019/95582/thumb2-xiaomi-glass-logo-black-background-artwork-brands-xiaomi-logo.jpg);
+		}
+		.honor{
+			background-image: url(https://w0.peakpx.com/wallpaper/337/913/HD-wallpaper-honor-logo-wooden-logo-wooden-background-honor-emblem-brands-wooden-art.jpg);
+		}
+		.photo1{
+			width: 1200px;
+			height: 600px;
+			transform: translateX(-50px);
+			position: relative;
+			top: 200px;
+			left: 10%;
+			background-size: cover;
+			background-position: center;
+			background-image: url(https://gizchina.it/wp-content/uploads/2018/04/honor-7c-ufficiale-italia-banner.jpg);
+		}
+		.conteiner3{
+			position: relative;
+			transform: translateX(-50%);
+			top: 250px;
+			left: 55%;
+			width: 80%;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.c1{
+			width: 330px;
+			height: 600px;	
+			position: relative;
+			overflow: hidden;
+		}
+		.photo2{
+			width: 330px;
+			height: 400px;
+			background-size: cover;
+			background-position: center;
+			background-image: url(https://cdn2.domotekhnika.ru/images/products/003/513/624/big/30103777_1.jpg);
+			transition: 1s;
+			margin: 0px auto;
+		}
+		.photo2:hover {
+			width: 200px;
+			height: 300px;
+			margin: 15px auto;
+		}
+		.t2{
+			width: 300px;
+			font-size: 20px;
+			text-align: center;
+			position: absolute;
+			top: 410px;
+			left: 15px;
+		}
+		.s{
+			width: 250px;
+			height: 35px;
+			border-radius: 10px;
+			background-color: yellow;
+			text-align: center;
+			color: black;
+			font-size: 25px;
+			position: absolute;
+			left: 40px;
+			top: 460px;
+		}
+		.k{
+			width: 280px;
+			height: 50px;
+			border-radius: 15px;
+			background-color: skyblue;
+			text-align: center;
+			color: white;
+			font-size: 25px;
+			position: absolute;
+			left: 25px;
+			top: 510px;
+		}	
+		.photo3{
+			background-image: url(https://i01.appmifile.com/webfile/globalimg/in/cms/58F356D1-538B-E4C7-0D9E-5266A9306F8E!800x800!85.jpg);
+		}
+		.photo4{
+			background-image: url(https://ir.ozone.ru/s3/multimedia-z/c1000/6606335159.jpg);
+		}
+		.photo5{
+			background-image: url(https://www.mifanmall.com/media/catalog/product/cache/1/small_image/9df78eab33525d08d6e5fb8d27136e95/o/r/original_xiaomi_mi_portable_mini_bluetooth_speaker_4_.jpg);
+		}
+		.photo6{
+			background-image: url(https://www.kivano.kg/images/product/35499/35499_full.jpg);
+		}
+		.photo7{
+			background-image: url( https://basis-tp.ru/wp-content/uploads/3/7/d/37d9fc0eb0543f818b858836dd903305.jpeg);
+		}
+		.box{
+			width: 1500px;
+			height:60px;
+			border: 2px solid black;
+			background-color: blue;
+			margin-top: 350px;
+		}
+		.t{
+			margin-top: 20px;
+			text-align:center;	
+			font-size: 15px;
+			color: white;	
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="conteiner1">
+			<div class="photo"></div>
+			<div class="text text0"><h1>iStore</h1></div>
+			<div class="text text1">Мобильные телефоны и аксессуары в Кыргызстане</div>
+		</div>
+		<div class="a">
+			<input class="a" type="search" placeholder="Поиск...">
+		</div>
+		<div class="conteiner2">
+			<div class="apple"></div>
+			<div class="apple samsung"></div>
+			<div class="apple huawei"></div>
+			<div class="apple xiaomi"></div>
+			<div class="apple honor"></div>
+		</div>
+		<div class="photo1"></div>
+		<div class="conteiner3">
+			<div class="c1">
+				<div class="photo2"></div>
+				<div class="t2">Смартфон Apple IPhone 11 128 Gb (RAM 4 Gb) черный</div>
+				<div class="s">61 800 <u>с</u></div>
+				<button class="k" type="button" name="k" >Купить</button>
+			</div>
+			<div class="c1">
+				<div class="photo2 photo3"></div>
+				<div class="t2">Xiaomi Redmi Note 8 Pro 64Gb (синий)</div>
+				<div class="s">17 250 <u>с</u></div>
+				<button class="k" type="button" name="k" >Купить</button>
+			</div>
+			<div class="c1">
+				<div class="photo2 photo4"></div>
+				<div class="t2">Смартфон Xiaomi Poco M3 4/128Gb Black</div>
+				<div class="s">13 500 <u>с</u></div>
+				<button class="k" type="button" name="k" >Купить</button>
+			</div>
+			<div class="c1">
+				<div class="photo2 photo5"></div>
+				<div class="t2">Blutooth колонка Xiaomi Mi BT Speaker 2 </div>
+				<div class="s">1 550 <u>с</u></div>
+				<button class="k" type="button" name="k" >Купить</button>
+			</div>
+			<div class="c1">
+				<div class="photo2 photo6"></div>
+				<div class="t2">Наушники Somic P6 оранжевый</div>
+				<div class="s">1 250 <u>с</u></div>
+				<button class="k" type="button" name="k" >Купить</button>
+			</div>
+			<div class="c1">
+				<div class="photo2 photo7"></div>
+				<div class="t2">Наушники Xiaomi In-Ear (QTER01JY) серебристые</div>
+				<div class="s">700 <u>с</u></div>
+				<button class="k" type="button" name="k" >Купить</button>
+			</div>
+		</div>
+		<div class="box">
+			<div class="t">Интернет Магазин iStore 2023 by Besoft Teach students</div>
+		</div>
+	</div>
+</body>
+</html>

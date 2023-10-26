@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.conteiner{
+			width: 700px;
+			height: 700px;
+			border: 2px solid black;
+			position: relative;
+		}
+		.box{
+			width: 250px;
+			height:250px;
+			background-color: red;
+			animation-name: t;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			position: absolute;
+		}
+		@keyframes t{
+			0%{
+				top: 0px;
+				left: 0px;
+			}
+			10%{
+				top: 0px;
+				left: 450px;
+			}
+			20%{
+				top: 450px;
+				left: 450px;
+			}
+			30%{
+				top: 450px;
+				left: 0px;
+			}
+			40%{
+				top: 0px ;
+				left: 0px;
+			}
+			50%{
+				top: 0px;
+				left: 0px;
+			}
+			60%{
+				top: 450px;
+				left: 0px;
+			}
+			70%{
+				top: 450px;
+				left: 450px;
+			}
+			80%{
+				top: 0px;
+				left: 450px;
+			}
+			100%{
+				top: 0px;
+				left: 0px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner">
+		<div class="box"></div>
+	</div>
+
+</body>
+</html>
